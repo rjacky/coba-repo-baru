@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mengatur karakter encoding menjadi UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Membuat halaman responsif untuk berbagai ukuran layar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>My Awesome Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar dengan link dan tombol toggle tema -->
+    <nav class="navbar">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- Tombol untuk toggle tema -->
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </nav>
+
+    <!-- Section hero untuk pengenalan -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Rjacky</h1>
+            <p>I'm a passionate web developer creating awesome digital experiences</p>
+            <a href="#projects" class="btn">View My Project</a>
+        </div>
+    </section>
+
+    <!-- Section untuk menampilkan proyek -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Kartu proyek 1 -->
+            <div class="project-card">
+                <img src="https://cdn.sanity.io/images/599r6htc/regionalized/dd1a495b8b4851ea64959fe6ea1d29f683ff226d-2400x2400.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A cool project showcasing my skills in web development</p>
+                </div>
+            </div>
+            <!-- Kartu proyek 2 -->
+            <div class="project-card">
+                <img src="https://cdn.sanity.io/images/599r6htc/regionalized/dd1a495b8b4851ea64959fe6ea1d29f683ff226d-2400x2400.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>An innovative application with modern technologies</p>
+                </div>
+            </div>
+            <!-- Kartu proyek 3 -->
+            <div class="project-card">
+                <img src="https://designshack.net/wp-content/uploads/finance-mobile-app-figma-template-ui-kit-233-1.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project Three</h3>
+                    <p>Creative solution for real-world problems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section untuk form kontak -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Canvas untuk animasi partikel -->
+    <canvas class="particles"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
